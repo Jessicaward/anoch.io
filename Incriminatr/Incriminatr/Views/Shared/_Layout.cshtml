@@ -16,11 +16,11 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("Incriminatr", "Lobby", "Chat", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("Chat", "Lobby", "Chat")</li>
                 </ul>
             </div>
         </div>
@@ -29,7 +29,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.2019 - Incriminatr</p>
+            <p>&copy; 2019 - Incriminatr</p>
         </footer>
     </div>
 
