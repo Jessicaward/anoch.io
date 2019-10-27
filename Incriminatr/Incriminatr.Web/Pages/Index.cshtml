@@ -15,8 +15,7 @@
         @foreach (var room in Model.ChatRooms)
         {
             <li>
-                @*todo: idk why URL Action doesn't work.. maybe something to do with Razor pages/.NET Core 3?*@
-                <a href="@Url.Action("Room", new {id = room.Id})">Join @room.Name</a>
+                <a href="@Url.Page("Room", new {id = room.Id})">Join @room.Name</a>
             </li>
         }
     </ul>

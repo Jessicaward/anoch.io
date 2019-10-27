@@ -10,6 +10,11 @@ namespace Incriminatr.Server
             throw new System.NotImplementedException();
         }
 
+        public ChatRoom GetChatRoomById(string id)
+        {
+            throw new System.NotImplementedException();
+        }
+
         public int GetNumberOfUsersInRoom(string roomId)
         {
             throw new System.NotImplementedException();
