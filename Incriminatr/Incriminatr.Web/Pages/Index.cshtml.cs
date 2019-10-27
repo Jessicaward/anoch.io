@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using System.Collections.Generic;
+using Incriminatr.Model;
+using Incriminatr.Server;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 
@@ -11,16 +9,18 @@ namespace Incriminatr.Pages
     public class IndexModel : PageModel
     {
         private readonly ILogger<IndexModel> _logger;
-        public string TestProperty { get; set; }
+        private readonly IRoomManager _roomManager;
+        public IEnumerable<ChatRoom> ChatRooms { get; set; }
 
-        public IndexModel(ILogger<IndexModel> logger)
+        public IndexModel(ILogger<IndexModel> logger, IRoomManager roomManager)
         {
             _logger = logger;
-            TestProperty = "test";
+            _roomManager = roomManager;
         }
 
         public void OnGet()
         {
+            ChatRooms = _roomManager.GetAllChatRooms();
         }
     }
 }

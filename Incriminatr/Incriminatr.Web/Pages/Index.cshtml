@@ -1,11 +1,23 @@
 ﻿@page
 @model IndexModel
+
 @{
-    ViewData["Title"] = "Rooms";
+    ViewData["Title"] = "Home";
 }
 
 <div class="text-center">
     <h1 class="display-4"></h1>
     <p>Incriminatr is an anonymous chat room platform.</p>
 </div>
-<p>@Model.TestProperty</p>
+
+<div id="roomList">
+    <ul>
+        @foreach (var room in Model.ChatRooms)
+        {
+            <li>
+                @*todo: idk why URL Action doesn't work.. maybe something to do with Razor pages/.NET Core 3?*@
+                <a href="@Url.Action("Room", new {id = room.Id})">Join @room.Name</a>
+            </li>
+        }
+    </ul>
+</div>
