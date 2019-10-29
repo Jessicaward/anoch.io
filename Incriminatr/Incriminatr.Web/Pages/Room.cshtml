@@ -5,3 +5,8 @@
 @{
     ViewData["Title"] = "Room - " + Model.CurrentRoom.Name;
 }
+
+@using (var form = Html.BeginForm())
+{
+    <input type="text" id="message-textbox"/>
+}
