@@ -13,7 +13,8 @@
 
 
     <ItemGroup>
-      <Folder Include="Repositories" />
+      <PackageReference Include="NUnit" Version="3.12.0" />
+      <PackageReference Include="ServiceStack.Redis" Version="5.7.0" />
     </ItemGroup>
 
 </Project>
