@@ -1,4 +1,4 @@
-namespace Incriminatr.Model
+namespace Incriminatr.Web.Model
 {
     public class ChatRoom
     {
