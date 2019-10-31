@@ -11,4 +11,9 @@
       <ProjectReference Include="..\Incriminatr.Server\Incriminatr.Server.csproj" />
     </ItemGroup>
 
+
+    <ItemGroup>
+      <Folder Include="Repositories" />
+    </ItemGroup>
+
 </Project>
