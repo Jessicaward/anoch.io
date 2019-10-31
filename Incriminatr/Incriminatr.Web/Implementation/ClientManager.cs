@@ -1,6 +1,7 @@
-using Incriminatr.Model;
+using Incriminatr.Web.Model;
+using Incriminatr.Web.Implementation;
 
-namespace Incriminatr.Server
+namespace Incriminatr.Web.Implementation
 {
     public class ClientManager : IClientManager 
     {

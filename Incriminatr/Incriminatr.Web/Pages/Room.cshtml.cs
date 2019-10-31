@@ -1,5 +1,5 @@
-using Incriminatr.Model;
-using Incriminatr.Server;
+using Incriminatr.Web.Model;
+using Incriminatr.Web.Implementation;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace Incriminatr.Pages

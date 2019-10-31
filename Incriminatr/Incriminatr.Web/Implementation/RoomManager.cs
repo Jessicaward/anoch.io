@@ -1,7 +1,7 @@
 using System.Collections.Generic;
-using Incriminatr.Model;
+using Incriminatr.Web.Model;
 
-namespace Incriminatr.Server
+namespace Incriminatr.Web.Implementation
 {
     public class RoomManager : IRoomManager
     {
